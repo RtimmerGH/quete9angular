@@ -1,0 +1,34 @@
+.content { 
+    display:flex;
+    width:95vw;
+    justify-content: center;
+    border: solid 3px rgb(70, 222, 141);
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin:0;
+    padding:1px;
+    height: 10%;
+}
+
+.collectionList {
+    height:80vh;
+    width:75vw;    
+}
+
+.kittens{
+    height:90%;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    overflow-y:auto;
+}
+
+.user-kitten {
+    height: 80vh;    
+    width:20vw;
+    border-left: solid 3px rgb(70, 222, 141);
+}

@@ -1,0 +1,12 @@
+<div class="content">
+    <div class="collectionList">
+        <div style="height:50vh;border-bottom: solid 3px rgb(70, 222, 141);">
+            <h3>Les chatons à adopter</h3>
+            <div class="kittens">
+                <app-kitten-list-card *ngFor="let kitten of kittenList; index as i" [kitten]="kitten" [kittenIndex]="i" (kittenToMove)="moveToUserList($event)"></app-kitten-list-card>
+            </div>           
+        </div>
+        <app-create-kitten class="add-kitten" (addKitten)="addNewKitten($event)"></app-create-kitten>
+    </div>
+    <app-user-kitten [userKittenList]="UserKittenList" class="user-kitten"></app-user-kitten>
+</div>

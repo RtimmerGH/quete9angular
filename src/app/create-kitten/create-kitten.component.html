@@ -1,0 +1,26 @@
+<div class="row">
+    <form class="col s12" (ngSubmit)="kittenForm.valid && onSubmit()" [formGroup]="kittenForm" #myForm="ngForm">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Félix" id="first_name" type="text" class="validate" formControlName="name">
+          <label for="first_name" class="active">Nom</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Maincoon" id="last_name" type="text" class="validate" formControlName="race">
+          <label for="last_name" class="active">Race</label>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="input-field col s6">
+            <input id="birthdate" type="date" class="validate" formControlName="birthday">
+            <label for="birthdate" class="active">Date de naissance</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" formControlName="picture">
+          <label for="last_name" class="active">Lien vers l'image</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" [style]="!kittenForm.valid ? 'background-color:#ef9a9a': '' " type="submit" name="action">Ajouter un chaton        
+      </button>        
+    </form>
+  </div>

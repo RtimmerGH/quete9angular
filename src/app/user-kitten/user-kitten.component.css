@@ -1,0 +1,29 @@
+.list-container{
+    height: 100%;
+}
+p{
+    height: 5%;
+    margin:0;
+}
+.kittenList{
+    height: 95%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow-y:auto;
+}
+
+.kitten-pic{
+    width:150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-kitten{
+    max-width:140px;
+    max-height:140px;
+    object-fit: contain;
+    border:2px solid teal;
+}

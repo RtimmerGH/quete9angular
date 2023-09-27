@@ -1,0 +1,12 @@
+<div class="complete-card" (mouseover)="showInfo=true" (mouseleave)="showInfo=false" [style]="showInfo ? 'border: 2px solid teal' : '' ">
+  <div class="card">
+    <img class="image-kitten circle" [src]="kitten?.picture" [alt]="kitten?.name" >
+    <div style="text-align: center;">{{kitten?.name}}</div>  
+    <button class="waves-effect waves-light btn" (click)="moveToUserList()">Adopter</button>
+  </div>
+  <div *ngIf="showInfo" class="card">
+    <div>Nom: {{kitten?.name}}</div>
+    <div>Race: {{kitten?.race}}</div>
+    <div>Né le: {{kitten?.birthday}}</div>    
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.complete-card{
+    display:flex;
+    margin:2px;    
+}
+
+.card{
+    height:180px;
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.image-kitten{
+    max-width:140px;
+    max-height:50%;
+    object-fit: contain;
+    border:2px solid teal;
+}
